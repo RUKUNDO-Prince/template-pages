@@ -7,14 +7,14 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand navbar-light fixed-top">
         <div className="container">
-          <NavLink className="navbar-brand" to='/home'>Home</NavLink>
-          <div className="collapse navbar-collapse">
-            <ul className="navbar-nav ms-auhref">
+          <Link className="navbar-brand" to={"/"}>Home</Link>
+          <div className="collapse navbar-collapse me-5">
+            <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-link" >Login</NavLink>
+                <Link className="nav-link" to={"/login"}>Login</Link>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to='/signup'>Sign Up</NavLink>
+                <Link className="nav-link" to={"/signup"}>Sign Up</Link>
               </li>
             </ul>
           </div>
