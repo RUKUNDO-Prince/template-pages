@@ -1,47 +1,55 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 
 const Signup = () => {
     
-   const handleSubmit = (e) => {
-        e.preventDefault();
-        const data = {
-            firstname: this.firstname,
-            lastname: this.lastname,
-            email: this.firstname,
-            password: this.password,
-            confirmpassword: this.confirmpassword
-        }
+    const [data,setData] = useState({
+        firstname: '',
+        lastname: '',
+        email: '',
+        password: '',
+        confirmpassword: ''
+    })
+    const handleSubmit = (e) => {
+       e.preventDefault();
+        console.log(data);
+    }
+
+    const handleInputs = (e)=>{
+        setData((prevstate)=>{
+            return{...prevstate, [e.target.name]: e.target.value}
+        })
     }
 
     return (
         
     <div>
 
-      <form onSubmit={handleSubmit}>
+      <form>
         <h3>Sign Up</h3>
         <div className="form-group">
-            <label htmlFor="">First Name</label>
-            <input type="text" className='form-control' placeholder='First Name' onChange={e => this.firstname = e.target.value} />
+            <label htmlFor="firstname">First Name</label>
+            <input type="text" className='form-control' placeholder='First Name' name='firstname' onChange={handleInputs} />
         </div>
         <div className="form-group">
             <label htmlFor="">Last Name</label>
-            <input type="text" className='form-control' placeholder='Last Name' onChange={e => this.lastname = e.target.value} />
+            <input type="text" className='form-control' placeholder='Last Name' name='lastname' onChange={handleInputs} />
         </div>
         <div className="form-group">
             <label htmlFor="">Email</label>
-            <input type="email" className='form-control' placeholder='Email' onChange={e => this.email = e.target.value} />
+            <input type="email" className='form-control' placeholder='Email' name='email' onChange={handleInputs} />
         </div>
         <div className="form-group">
             <label htmlFor="">Password</label>
-            <input type="password" className='form-control' placeholder='Password' onChange={e => this.password = e.target.value} />
+            <input type="password" className='form-control' name='password' placeholder='Password' onChange={handleInputs} />
         </div>
         <div className="form-group">
             <label htmlFor="">Confirm Password</label>
-            <input type="password" className='form-control' placeholder='Confirm Password' onChange={e => this.confirmpassword = e.target.value} />
+            <input type="password" className='form-control' name='confirmpassword' placeholder='Confirm Password' onChange={handleInputs} />
         </div>
         <button type='submit' className='btn btn-primary btn-block mt-3'>Sign Up</button>
       </form>
+
     </div>
   )
 }
