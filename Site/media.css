@@ -1,0 +1,166 @@
+@media screen and (max-width: 1402px) {
+    header {
+        width: 95%;
+    }
+    .home {
+        width: 95%;
+    }
+    section {
+        width: 95%;
+    }
+    .map .address_bx {
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 971px) {
+    header .content .choose_bx {
+        width: 95%;
+    }
+    header .content .choose_bx .select .card:nth-child(3) .date h3 {
+        width: 100px;
+        font-size: 15px;
+    }
+    header .content .choose_bx .select .card:nth-child(3) .date i {
+        left: 77%;
+    }
+    .home {
+        height: auto;
+    }
+    .home .home_bx {
+        flex-wrap: wrap;
+    }
+    .home .home_bx .card {
+        margin-top: 10px;
+    }
+    section {
+        top: -100px;
+    }
+    section .box .cont_box ul li {
+        font-size: 11px;
+        width: 155px;
+    }
+    .map .address_bx {
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        overflow: hidden;
+    }
+    header .content .cont_bx h1 {
+        color: #fff;
+    }
+    header .content .cont_bx p {
+        color: #fff;
+    }
+    header .content .cont_bx .weather h6 {
+        color: #fff;
+    }
+    header .content .cont_bx .btns_cont {
+        color: #fff;
+    }
+    header .content .choose_bx .select {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    header .content .choose_bx .select .card {
+        width: 49%;
+    }
+    header .content .choose_bx .select .card:nth-last-child(1) {
+        width: 100%;
+        margin-top: 5px;
+    }
+    header .content .choose_bx .select .card:nth-child(3) .date h3 {
+        width: 120px;
+        font-size: 18px;
+    }
+    .home .home_bx {
+        width: 100%;
+    }
+    .home .home_bx {
+        width: 88%;
+        justify-content: center;
+    }
+    .home .home_bx .card {
+        margin: 10px;
+    }
+    section .box {
+        flex-direction: column;
+    }
+    section .box .img_bx,
+    .cont_box {
+        width: 100%;
+    }
+    section .box .cont_box {
+        width: 85%;
+        margin-top: 30px;
+        margin-left: 8%;
+    }
+    section .box .cont_box ul li {
+        width: 170px;
+    }
+    .map .address_bx {
+        left: 2%;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    header nav .right_bx ul {
+        position: absolute;
+        width: 320px;
+        height: auto;
+        top: 40px;
+        right: -20px;
+        padding: 10px;
+        z-index: 9999999999999;
+        align-items: center;
+    }
+    header nav .right_bx ul li {
+        padding: 15px 10px;
+    }
+    header nav .right_bx ul li a {
+        color: #fff;
+    }
+    header nav .right_bx ul li:nth-last-child(1) {
+        border: none;
+        border-radius: none;
+        padding: 3px 14px;
+    }
+    header nav .right_bx ul li:nth-last-child(1) a {
+        color: #fff;
+    }
+    .home {
+        width: 98%;
+    }
+    .home .home_bx {
+        width: 100%;
+    }
+    .map .address_bx {
+        width: 165px;
+    }
+    .map .address_bx .location_bx h4 {
+        font-size: 12px;
+    }
+    .map .address_bx .location_bx .bi {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    header .content .cont_bx {
+        padding-left: 25px;
+    }
+    header .content .choose_bx .select .card {
+        padding: 10px 0px 10px 10px;
+        overflow: hidden;
+    }
+    header .content .choose_bx .select .card input:nth-child(3) {
+        font-size: 10px;
+    }
+    header .content .choose_bx .select .card:nth-child(3) .date h3 {
+        width: 100px;
+        font-size: 15px;
+    }
+}
