@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Real Estate</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h4><i class="bi bi-house-door-fill"></i> House</h4>
+            <div class="right_bx">
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#"><i class="bi bi-globe"></i> Language</a></li>
+                    <li><a href="#">List Your Property</a></li>
+                </ul>
+                <div class="account_bx">
+                    <i class="bi bi-app-indicator"></i>
+                    <i class="bi bi-person"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="cont_bx">
+                <h1>Modren <br> house</h1>
+                <p>3 bedrooms, 1 kitchen, 2 bathrooms</p>
+                <div class="weather">
+                    <h6>42 °C <span>Very Hot</span></h6>
+                </div>
+                <div class="btns_cont">
+                    <i class="bi bi-arrow-left" id="btn_left"></i>
+                    <i class="bi bi-arrow-right" id="btn_right"></i>
+                </div>
+                <div class="images_bx">
+                    <div class="card">
+                        <img src="img/An outdoor pool.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/(6x7 Meters) Small House Design Idea with 3 Bedrooms.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/Random Inspiration 335.jpg" alt="">
+                        <h6 id="h6">+6</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="choose_bx">
+                <div class="stay_bx">
+                    <button><i class="bi bi-house-door-fill"></i></button>
+                    <button><i class="bi bi-star-fill"></i></button>
+                    <button><i class="bi bi-tv-fill"></i></button>
+                </div>
+                <div class="select">
+                    <div class="card">
+                        <h5>City</h5>
+                        <input type="text" value="Dubai">
+                        <input type="text" value="United Arab Emirates">
+                    </div>
+                    <div class="card">
+                        <h5>People</h5>
+                        <input type="text" value="4 People" id="people">
+                        <button id="people_less">Less</button>
+                        <button id="people_more">More</button>
+                    </div>
+                    <div class="card">
+                        <div class="left_box">
+                            <h5>CHECK IN</h5>
+                            <div class="date">
+                                <h3 id="checkin_data">Sat, 05 Jan</h3>
+                                <input type="date" id="checkin" value="2022-09-11">
+                                <i class="bi bi-calendar2-week-fill"></i>
+                            </div>
+                            <button>Less</button>
+                            <button>More</button>
+                        </div>
+                        <div class="right_box">
+                            <h5>CHECK OUT</h5>
+                            <div class="date">
+                                <h3 id="checkout_data">Sun, 06 Jan</h3>
+                                <input type="date" id="checkout">
+                                <i class="bi bi-calendar2-week-fill"></i>
+                            </div>
+                            <button id="checkout_less">Less</button>
+                            <button id="checkout_more">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="map">
+        <div class="address_bx">
+            <div class="location_bx">
+                <h6>Location</h6>
+                <h4>Sharjah House</h4>
+            </div>
+            <i class="bi bi-fullscreen-exit"></i>
+        </div>
+        <iframe src="https://my.atlistmaps.com/map/34e88f21-f4b4-4f11-8114-c2262f8c9fec?share=true" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+
+    <div class="home">
+        <div class="title_button">
+            <h2>Explore more houses</h2>
+            <button>See All <i class="bi bi-arrow-right"></i></button>
+        </div>
+
+        <div class="home_bx">
+            <div class="card">
+                <img src="img/home1.png" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Dubai</h4>
+                        <p>United Arb Emirates</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/A maison de passe interior design.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Abu Dhabi</h4>
+                        <p>United Arb Emirates</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/An outdoor pool.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Ras Al-Khaimah</h4>
+                        <p>United Arb Emirates</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Random Inspiration 335.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Zayed City</h4>
+                        <p>United Arb Emirates</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/An outdoor pool.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Dubai</h4>
+                        <p>United Arb Emirates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <h2>Our Service</h2>
+        <div class="box">
+            <div class="img_bx">
+                <img src="img/317e7c5f5d69514a14d0168bdf266a7f.jpg" alt="">
+            </div>
+            <div class="cont_box">
+                <h6><span>OUR SERVICE</span></h6>
+                <h1>Comfort is our <br> Top Priority for you</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo minus ab porro id expedita facilis repudiandae dolorum maxime reprehenderit sit?</p>
+                <ul>
+                    <li>Pramium natinal markting</li>
+                    <li>Manged viowing</li>
+                    <li>Frco, no obligation valuctions</li>
+                    <li>Local area knowladge</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h4><i class="bi bi-house-door-fill"></i> House</h4>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
